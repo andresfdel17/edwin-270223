@@ -1,0 +1,66 @@
+const message = "Hello world";
+const cad2 = 'Rozo';
+const age = 36;
+const cad3 = `Intructor`; //template string o template literal;
+console.log(cad1+" "+cad2+" "+cad3+" y tengo "+age+" años");
+
+console.log(`Hola mi nombre es ${cad1} ${cad2} y tengo ${calculateAge(2023,1987)} años`);
+
+const product = {
+  id: 1,
+  name: 'rice',
+  price: 1500,
+  stock: 50
+}
+
+const { name, price } = product;
+console.log(`El producto ${product.name} tiene un costo de ${product.price}`);
+console.log(`El producto ${name} tiene un costo de ${price}`);
+
+function calculateAge(currentYear, birthDay) {
+  return currentYear - birthDay
+}
+
+// length -> Longitud, tamaño, dimensión
+console.log(message.length);
+// charAt() -> trae un caracter por medio de su índice
+console.log(message.charAt(('Hola Mundo').length-1));
+// toUpperCase() -> Convertir a mayúscula
+console.log(message.toUpperCase());
+// toLowerCase() -> Convertir a minúscula
+console.log(message.toLowerCase());
+// trimStart() - trimEnd() - trim() 
+// 1. trimStart() Elimina los espacios del principio
+// 2. trimEnd() Elimina los espacios del principio
+// 3. trim() Elimina los espacios del principio
+const password = ' hello world ';
+// slice
+const phrase = "Hola mundo, saludos desde el sena";
+// console.log(phrase.slice(4,10));
+// substring
+// console.log(phrase.substring(4,10));
+console.log(phrase.substring(12,19));
+//indexOf
+console.log(phrase.indexOf('z'));
+// includes
+console.log(phrase.includes('saludos'));
+// split
+const data = phrase.split(',');
+console.log(data);
+
+const cadData = data.toString();
+console.log(cadData);
+
+// regexp
+const regexPass = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+
+//Pending
+
+// if (regexPass.match("hola mundo")) {
+  
+// }
+
+// if (regexPass.test("Hola mundo")) {
+  
+//replace
+console.log(("hola Mundo").replace('h','H'))

@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+header {
+  width: 100%;
+  height: 6rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;  
+}
+
+nav {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  width: 10rem;
+  height: 2rem;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
+  border: 4px double #56056a;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #56056a;
+  cursor: pointer;
+  border: 4px double #dd9bee;
+  color: #d6d6be;
+}
