@@ -8,4 +8,8 @@ textChars?.addEventListener("keyup", (e: any) => {
     if(left <= 50) leftChars.style.color = "red";
     if(left > 50) leftChars.style.color = "black";
     leftChars.textContent = leftText;
+    if(left <= 0){
+        alert("Se quedó sin caracteres");
+        textChars.value = textChars?.value?.substring(0,249);
+    }
 })
