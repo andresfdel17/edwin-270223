@@ -1,4 +1,4 @@
-const textChars: any = document.getElementById("textChars");
+const textChars = <HTMLTextAreaElement>document.getElementById("textChars");
 const leftChars: any = document.getElementById("leftChars");
 const TOTALCHARS = 250;
 
@@ -10,6 +10,5 @@ textChars?.addEventListener("keyup", (e: any) => {
     leftChars.textContent = leftText;
     if(left <= 0){
         alert("Se quedó sin caracteres");
-        textChars.value = textChars?.value?.substring(0,249);
     }
 })
